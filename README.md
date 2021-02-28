@@ -2,7 +2,7 @@
 
 Miniman is a Pac-Man clone made with the [SFML](http://www.sfml-dev.org/) multimedia library. 
 
-For more details, please visit https://pekkahellsten.com/.
+For more details about the game, please visit https://pekkahellsten.com/.
 
 ## Source directories
 
