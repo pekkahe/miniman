@@ -1,0 +1,23 @@
+,
+,What the tile numbers mean:
+,00 = dot (movable)
+,01 = energizer (movable)
+,02 = empty (movable)
+,
+,10 = top wall (non-movable)
+,11 = bottom wall (non-movable)
+,12 = right wall (non-movable)
+,13 = left wall (non-movable)
+,14 = full wall (non-movable)
+,
+,20 = top-left outer corner (non-movable)
+,21 = top-right outer corner (non-movable)
+,22 = bottom-left outer corner (non-movable)
+,23 = bottom-right outer corner (non-movable)
+,
+,30 = top-left inner corner (non-movable)
+,31 = top-right inner corner (non-movable)
+,32 = bottom-left inner corner (non-movable)
+,33 = bottom-right inner corner (non-movable)
+,
+,"40 = special, door (non-movable)"

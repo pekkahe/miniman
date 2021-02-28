@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AStar">
+      <UniqueIdentifier>{b13e7e2f-fa1c-4287-be36-d3e94303e7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters">
+      <UniqueIdentifier>{cfc39d29-f468-4af9-86a3-1ec2fe77ccf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\AI">
+      <UniqueIdentifier>{2fc8126e-a229-466c-8b5b-ec95125a4c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Movement">
+      <UniqueIdentifier>{55baed67-75ce-4669-90ce-3d2862674056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{8b87769d-152f-44dd-9f8e-aa5b9b726dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{e6817df2-1589-4ac1-a1b3-fce54263a45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tests">
+      <UniqueIdentifier>{a288dcfc-07aa-4e03-a5fb-ebe5c0be8940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Animation">
+      <UniqueIdentifier>{98bcc468-ea2e-445d-b5d2-cc201d1e7cbd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AStar\Graph.cpp">
+      <Filter>Source Files\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar\Path.cpp">
+      <Filter>Source Files\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar\PathFinder.cpp">
+      <Filter>Source Files\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar\PathIterator.cpp">
+      <Filter>Source Files\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar\Tests.cpp">
+      <Filter>Source Files\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="AStar\Worker.cpp">
+      <Filter>Source Files\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="AI.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviourSchedule.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkyAI.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkyChaseBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="ClydeAI.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="ClydeChaseBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="FrightenedBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="InkyAI.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="InkyChaseBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="PinkyAI.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="PinkyChaseBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="ScatterBehaviour.cpp">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyMovementMotor.cpp">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="MovementMotor.cpp">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMovementMotor.cpp">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseClock.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="HighlighterTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseClockTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatorController.cpp">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyAnimatorController.cpp">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAnimatorController.cpp">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Locator.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugTools.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIMenu.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSettings.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioBank.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetection.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AStar\Node.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\Graph.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\AStar.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Source Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Source Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\Path.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\Tests.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AI.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ScatterBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviours.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\Worker.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\PathFinder.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\AStarInternal.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\ClientInterface.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourInterface.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="FrightenedBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="PinkyChaseBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkyChaseBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ClydeChaseBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="InkyChaseBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyMovementMotor.h">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementMotor.h">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMovementMotor.h">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkyAI.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ClydeAI.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="PinkyAI.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="InkyAI.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseClock.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseClockTest.h">
+      <Filter>Source Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests.h">
+      <Filter>Source Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar\PathIterator.h">
+      <Filter>Source Files\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="HighlighterTest.h">
+      <Filter>Source Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadBehaviour.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourSchedule.h">
+      <Filter>Source Files\Characters\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatorController.h">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyAnimatorController.h">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAnimatorController.h">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Locator.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IMovementMotor.h">
+      <Filter>Source Files\Characters\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="IAnimatorController.h">
+      <Filter>Source Files\Characters\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugTools.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIMenu.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSettings.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioBank.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SvnVersionInfo.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetection.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

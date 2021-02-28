@@ -1,0 +1,59 @@
+* Ghosts are prohibited from reversing their direction of travel, UNLESS when changing modes
+* Ghosts are FORCED to reverse direction anytime the mode changes from:
+  - chase-to-scatter
+  - chase-to-frightened
+  - scatter-to-chase
+  - scatter-to-frightened
+* Ghosts DO NOT reverse direction when changing back from:
+  - frightened-to-chase
+  - frightened-to-scatter
+  >> Reversal signal/flag?
+* Ghost prefers directions in this order: up, left, down, right
+  
+**********
+CHASE MODE
+**********
+- ghosts use Pac-Man's position as a factor in selecting their target tile, though it is more significant to some ghosts than others:
+
+Blinky (red):
+- very aggressive and hard to shake once he gets behind you
+- uses Pac-Man's current tile as his target
+>> Target Pac-Man
+
+Pinky (pink):
+- tends to get in front of you and cut you off
+- selects an offset four tiles away from Pac-Man in the direction Pac-Man is currently moving
+- if Pac-Man is too close and Pinky is actually between target tile and Pac-Man, turn if possible, otherwise catch Pac-Man
+>> Target 4 tiles forward of Pac-Man; if not movable, check +1/-1 tiles; if still not movable, skip?
+>> If between 4 tiles and Pac-Man, target adjacent tile to turn away (not backward); if not movable, target Pac-Man 
+
+Inky (light blue):
+- is the least predictable of the bunch
+- needs Pac-Man's current tile/orientation and Blinky's current tile to calculate his final target
+- to determine target tile, first get an offset two tiles in front of Pac-Man in the direction he is moving. Now, get a vector from Blinky's tile to the offset tile and double the vector length. The target tile is the tile where the extended vector points to.
+>> 1. Get vector from Blinky to 2 tiles forward of Pac-Man
+>> 2. Double vector magnitude
+>> 3. Target vector end point; if not movable, check +1/-1 tiles; if still not movable, skip?
+
+Clyde (orange):
+- seems to do his own thing and stay out of the way
+- targeting logic changes based on his proximity to Pac-Man
+- first calculates the Euclidean distance between his tile and Pac-Man's tile. If the distance between them is eight tiles or more, targets Pac-Man directly.
+- if the distance between them is less than eight tiles, switches his target to the tile he normally uses during scatter mode and heads for his corner until he gets far enough away to start targeting Pac-Man again
+>> 1. Get distance to Pac-Man
+>> 2. Convert distance to tiles
+>> 3. If distance less than 8, target Scatter mode tile; if over, target Pac-Man
+
+************
+SCATTER MODE
+************
+- each ghost has a fixed target tile, each of which is located just outside a different corner of the maze
+- this causes the four ghosts to disperse to the corners whenever they are in this mode
+>> Set fixed target tiles for each Ghost
+>> If target tile is reached, continue using preferred turning
+
+***************
+FRIGHTENED MODE
+***************
+- ghosts pseudorandomly decide which turns to make at every intersection
+>> Use preferred turning
