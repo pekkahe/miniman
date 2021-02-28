@@ -27,9 +27,9 @@ typedef unsigned int uint;
 const std::string GAME_TITLE = "Miniman";
 
 /// <summary>
-/// The current major version of the game. Minor version is defined in <c>SvnVersionInfo.h</c>.
+/// The current major version of the game.
 /// </summary>
-const std::string MAJOR_VERSION = "1.0";
+const std::string MAJOR_VERSION = "1.1";
 
 /// <summary>
 /// The width of the game window in pixels.

@@ -26,7 +26,7 @@ void Tests::initialize()
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     };
 
-    Locator::level()->load("../assets/textures/level.png", sf::Vector2u(32, 32), tiles, 16, 8);
+    Locator::level()->load("/assets/textures/level.png", sf::Vector2u(32, 32), tiles, 16, 8);
 }
 
 Path* Tests::findPath(sf::Vector2u from, sf::Vector2u to)

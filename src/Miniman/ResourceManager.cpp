@@ -17,18 +17,18 @@ bool ResourceManager::init()
 	PHYSFS_init(NULL);
 
 	// Setup archives that will be read on
-	if (!PHYSFS_mount("../assets/gfx.pac", "/gfx/", 1)) {
-		debug().error(std::string(PHYSFS_getLastError()));
+	if (!PHYSFS_mount("assets/gfx.pac", "/gfx/", 1)) {
+		debug().error("PHYSFS_mount: assets/gfx.pac " + std::string(PHYSFS_getLastError()));
 		return false;
 	}
 
-	if (!PHYSFS_mount("../assets/sfx.pac", "/sfx/", 1)) {
-		debug().error(std::string(PHYSFS_getLastError()));
+	if (!PHYSFS_mount("assets/sfx.pac", "/sfx/", 1)) {
+		debug().error("PHYSFS_mount: assets/sfx.pac " + std::string(PHYSFS_getLastError()));
 		return false;
 	}
 
-	if (!PHYSFS_mount("../assets/misc.pac", "/misc/", 1)) {
-		debug().error(std::string(PHYSFS_getLastError()));
+	if (!PHYSFS_mount("assets/misc.pac", "/misc/", 1)) {
+		debug().error("PHYSFS_mount: assets/misc.pac " + std::string(PHYSFS_getLastError()));
 		return false;
 	}
 
@@ -44,7 +44,7 @@ std::string ResourceManager::getPath(const std::string& fileName)
 	// PhysicsFS doesn't support this out of the box, so we're using regular ifstream
 	// and need to return the relative file system path.
 	if (extension == "lvl" || extension == "sc")
-		return "../assets/" + fileName;
+		return "assets/" + fileName;
 
 	if (extension == "wav")
 		return "/sfx/" + fileName;

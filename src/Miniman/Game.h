@@ -12,7 +12,6 @@
 #include "EnemyManager.h"
 #include "ResourceManager.h"
 #include "AudioManager.h"
-#include "SvnVersionInfo.h"
 #include "CollisionDetection.h"
 #include "GameSettings.h"
 

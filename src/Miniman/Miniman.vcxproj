@@ -41,12 +41,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>obj\$(Configuration)\</IntDir>
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>obj\$(Configuration)\</IntDir>
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
@@ -67,10 +67,17 @@
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-audio-d-2.dll" "$(TargetDir)"
+      <Command>echo Copying SFML binaries to output directory
+copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-audio-d-2.dll" "$(TargetDir)"
 copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-graphics-d-2.dll" "$(TargetDir)"
 copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-system-d-2.dll" "$(TargetDir)"
 copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-window-d-2.dll" "$(TargetDir)"
+
+echo Copying assets to output directory
+xcopy /y "$(SolutionDir)assets\gfx.pac" "$(TargetDir)assets\"
+xcopy /y "$(SolutionDir)assets\misc.pac" "$(TargetDir)assets\"
+xcopy /y "$(SolutionDir)assets\sfx.pac" "$(TargetDir)assets\"
+xcopy /y "$(SolutionDir)assets\level.lvl" "$(TargetDir)assets\"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -84,20 +91,30 @@ copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-window-d-2.d
       <AdditionalIncludeDirectories>$(SolutionDir)external\physfs\v3.0.2\src;$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>sfml-system.lib;sfml-main.lib;sfml-graphics.lib;sfml-window.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-audio-2.dll" "$(TargetDir)"
+      <Command>echo Copying SFML binaries to output directory
+copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-audio-2.dll" "$(TargetDir)"
 copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-graphics-2.dll" "$(TargetDir)"
 copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-system-2.dll" "$(TargetDir)"
 copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-window-2.dll" "$(TargetDir)"
+
+echo Copying assets to output directory
+xcopy /y "$(SolutionDir)assets\gfx.pac" "$(TargetDir)assets\"
+xcopy /y "$(SolutionDir)assets\misc.pac" "$(TargetDir)assets\"
+xcopy /y "$(SolutionDir)assets\sfx.pac" "$(TargetDir)assets\"
+xcopy /y "$(SolutionDir)assets\level.lvl" "$(TargetDir)assets\"
+
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -220,7 +237,6 @@ copy /y "$(SolutionDir)external\sfml\v2.5.1-win-vc15-32bit\bin\sfml-window-2.dll
     <ClInclude Include="Global.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="ResourceManager.h" />
-    <ClInclude Include="SvnVersionInfo.h" />
     <ClInclude Include="Util.h" />
     <ClInclude Include="BehaviourInterface.h" />
     <ClInclude Include="Input.h" />

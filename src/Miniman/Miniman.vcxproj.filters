@@ -414,9 +414,6 @@
     <ClInclude Include="AudioBank.h">
       <Filter>Source Files\Components</Filter>
     </ClInclude>
-    <ClInclude Include="SvnVersionInfo.h">
-      <Filter>Source Files\Helpers</Filter>
-    </ClInclude>
     <ClInclude Include="CollisionDetection.h">
       <Filter>Source Files\Components</Filter>
     </ClInclude>

@@ -5,7 +5,6 @@
 #include "GUI.h"
 #include "GUIMenu.h"
 #include "Game.h"
-#include "SvnVersionInfo.h"
 #include "Player.h"
 #include "Renderer.h"
 #include "Level.h"

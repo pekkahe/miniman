@@ -295,7 +295,7 @@ void Game::updateScore(ScoreModifier scoreModifer)
 
 std::string Game::versionInformation()
 {
-	return "v " + majorVersion_ + "." + std::to_string(SVN_REVISION);
+	return "v " + majorVersion_ + ".0";
 }
 
 Game::~Game()
