@@ -29,6 +29,9 @@
     <Filter Include="Source Files\Characters\Animation">
       <UniqueIdentifier>{98bcc468-ea2e-445d-b5d2-cc201d1e7cbd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\physfs">
+      <UniqueIdentifier>{1cc622df-ab3d-40ed-9cf1-ca20df752972}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AStar\Graph.cpp">
@@ -174,6 +177,72 @@
     </ClCompile>
     <ClCompile Include="CollisionDetection.cpp">
       <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_7z.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_dir.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_grp.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_hog.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_iso9660.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_mvl.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_qpak.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_slb.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_unpacked.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_vdf.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_wad.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_archiver_zip.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_byteorder.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_haiku.cpp">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_os2.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_posix.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_qnx.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_unix.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_windows.c">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_platform_winrt.cpp">
+      <Filter>Source Files\physfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\physfs\v3.0.2\src\physfs_unicode.c">
+      <Filter>Source Files\physfs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -351,5 +420,36 @@
     <ClInclude Include="CollisionDetection.h">
       <Filter>Source Files\Components</Filter>
     </ClInclude>
+    <ClInclude Include="..\external\physfs\v3.0.2\src\physfs.h">
+      <Filter>Source Files\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\physfs\v3.0.2\src\physfs_casefolding.h">
+      <Filter>Source Files\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\physfs\v3.0.2\src\physfs_internal.h">
+      <Filter>Source Files\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\physfs\v3.0.2\src\physfs_lzmasdk.h">
+      <Filter>Source Files\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\physfs\v3.0.2\src\physfs_miniz.h">
+      <Filter>Source Files\physfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\physfs\v3.0.2\src\physfs_platforms.h">
+      <Filter>Source Files\physfs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\external\physfs\v3.0.2\README.txt">
+      <Filter>Source Files\physfs</Filter>
+    </Text>
+    <Text Include="..\external\physfs\v3.0.2\LICENSE.txt">
+      <Filter>Source Files\physfs</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\external\physfs\v3.0.2\src\physfs_platform_apple.m">
+      <Filter>Source Files\physfs</Filter>
+    </None>
   </ItemGroup>
 </Project>

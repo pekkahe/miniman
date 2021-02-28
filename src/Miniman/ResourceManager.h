@@ -1,7 +1,11 @@
 #ifndef RESOURCE_MANAGER_H_
 #define RESOURCE_MANAGER_H_
 
+#pragma warning(push)
+#pragma warning(disable : 4635)
 #include "physfs.h"
+#pragma warning(pop) 
+
 #include <string>
 #include <SFML\Audio.hpp>
 #include <SFML\Graphics.hpp>

@@ -33,7 +33,7 @@ void GUIMenu::setTitle(const std::string& text, int characterSize, int offset)
 {
 	title_.setFont(font_);
 	title_.setCharacterSize(characterSize);
-	title_.setColor(sf::Color::Yellow);
+	title_.setFillColor(sf::Color::Yellow);
 	title_.setString(text);
 	
 	sf::FloatRect bounds(title_.getGlobalBounds());
@@ -45,7 +45,7 @@ void GUIMenu::setSubtitle(const std::string& text, int characterSize, int offset
 {
 	subtitle_.setFont(font_);
 	subtitle_.setCharacterSize(characterSize);
-	subtitle_.setColor(sf::Color::Yellow);
+    subtitle_.setFillColor(sf::Color::Yellow);
 	subtitle_.setString(text);
 
 	sf::FloatRect bounds(subtitle_.getGlobalBounds());
@@ -59,7 +59,7 @@ void GUIMenu::addItem(const std::string& displayText, menu_action action)
 	sf::Text item;
 	item.setFont(font_);
 	item.setCharacterSize(60);
-	item.setColor(sf::Color::White);
+	item.setFillColor(sf::Color::White);
 	item.setString(displayText);
 
 	// Add the new item to the end of the collection
@@ -93,7 +93,7 @@ void GUIMenu::addText(const std::string& text, const sf::Vector2f& position, uns
 	sf::Text item;
 	item.setFont(font_);
 	item.setCharacterSize(characterSize);
-	item.setColor(color);
+	item.setFillColor(color);
 	item.setString(text);
 	item.setPosition(position);
 

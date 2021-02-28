@@ -1,4 +1,6 @@
 /builds
+/src/bin
+/src/assets/highscore.sc
 
 # Prerequisites
 *.d
@@ -35,3 +37,4 @@ Release
 *.vbproj.user
 ipch
 *sdf
+.vs/

@@ -55,7 +55,7 @@ bool GUI::init(const std::string& fontFile, const std::string& playerTextureFile
 	// Initialize text elements
 	highScoreTitle_.setFont(font_);
 	highScoreTitle_.setCharacterSize(20); // In pixels, not points!
-	highScoreTitle_.setColor(sf::Color::White);
+	highScoreTitle_.setFillColor(sf::Color::White);
 	highScoreTitle_.setString("High score");
 	highScoreTitle_.setPosition(sf::Vector2f(
 		static_cast<float>(gameView.left + (gameView.width / 2) - (highScoreTitle_.getLocalBounds().width / 2)),
@@ -63,7 +63,7 @@ bool GUI::init(const std::string& fontFile, const std::string& playerTextureFile
 
 	highScoreValue_.setFont(font_);
 	highScoreValue_.setCharacterSize(20);
-	highScoreValue_.setColor(sf::Color::White);
+	highScoreValue_.setFillColor(sf::Color::White);
 	highScoreValue_.setString(std::to_string(Locator::game()->highScore()));
 	highScoreValue_.setPosition(sf::Vector2f(
 		static_cast<float>(highScoreTitle_.getGlobalBounds().left + (highScoreTitle_.getGlobalBounds().width / 2) -
@@ -72,7 +72,7 @@ bool GUI::init(const std::string& fontFile, const std::string& playerTextureFile
 
 	playerScoreTitle_.setFont(font_);
 	playerScoreTitle_.setCharacterSize(20);
-	playerScoreTitle_.setColor(sf::Color::White);
+	playerScoreTitle_.setFillColor(sf::Color::White);
 	playerScoreTitle_.setString("Player");
 	playerScoreTitle_.setPosition(sf::Vector2f(
 		static_cast<float>(gameView.left + 10),
@@ -80,7 +80,7 @@ bool GUI::init(const std::string& fontFile, const std::string& playerTextureFile
 
 	playerScoreValue_.setFont(font_);
 	playerScoreValue_.setCharacterSize(20);
-	playerScoreValue_.setColor(sf::Color::White);
+	playerScoreValue_.setFillColor(sf::Color::White);
 	playerScoreValue_.setString(std::to_string(0));
 	playerScoreValue_.setPosition(sf::Vector2f(
 		static_cast<float>(playerScoreTitle_.getGlobalBounds().left + (playerScoreTitle_.getGlobalBounds().width / 2) - 
@@ -91,7 +91,7 @@ bool GUI::init(const std::string& fontFile, const std::string& playerTextureFile
 	#ifdef _DEBUG
 		dotsLeft_.setFont(font_);
 		dotsLeft_.setCharacterSize(20);
-		dotsLeft_.setColor(sf::Color::White);
+		dotsLeft_.setFillColor(sf::Color::White);
 		dotsLeft_.setString("Dots:");
 		dotsLeft_.setPosition(sf::Vector2f(
 			static_cast<float>(gameView.left + gameView.width - (dotsLeft_.getGlobalBounds().width * 2)),
